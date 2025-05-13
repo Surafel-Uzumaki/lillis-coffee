@@ -194,7 +194,7 @@ const AboutUs: NextPage = () => {
         className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden "
       >
         <motion.div
-          className="absolute inset-0 z-0 bg-[url('/images/products/lilis.jpg')] bg-cover bg-center"
+          className="absolute inset-0 z-0 bg-[url('/images/beans.jpg')] bg-cover bg-center"
           style={{ y: yPosHero }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50 z-1 "></div>
@@ -245,7 +245,7 @@ const AboutUs: NextPage = () => {
               transition={{ duration: 0.6, ease: [0.16, 0.77, 0.47, 0.97] }}
             >
               <Image
-                src="/images/hero.jpg"
+                src="/images/products/Lilis.jpg"
                 alt="Founder Emma Lillis"
                 fill
                 className="object-cover transform hover:scale-105 transition-transform duration-1000"
