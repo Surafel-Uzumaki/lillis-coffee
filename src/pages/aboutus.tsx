@@ -194,7 +194,7 @@ const AboutUs: NextPage = () => {
         className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden "
       >
         <motion.div
-          className="absolute inset-0 z-0 bg-[url('/images/beans.jpg')] bg-cover bg-center"
+          className="absolute inset-0 z-0 bg-[url('/images/products/lilis.jpg')] bg-cover bg-center"
           style={{ y: yPosHero }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50 z-1 "></div>
