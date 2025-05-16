@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { drinks, foods } from "../data/products";
-import Navbar from "../components/Navbar";
 import { FiChevronDown, FiPhone } from "react-icons/fi";
 
 interface MenuItem {
@@ -83,10 +82,9 @@ const MenuPage: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <Navbar />
+      
 
-      <div className="relative h-[60vh] bg-white overflow-hidden border-b">
-        <div className="absolute inset-0 bg-[url('/images/pattern.png')] opacity-[0.03]"></div>
+      <div className="relative h-[25vh] bg-white overflow-hidden border-b">
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
           <h1 className="text-6xl md:text-7xl font-bold mb-8 font-serif text-blue-950 tracking-tight">
             Our Menu

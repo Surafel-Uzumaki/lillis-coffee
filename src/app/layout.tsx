@@ -2,10 +2,6 @@ import type { Metadata } from "next";
 import { Playfair_Display, Open_Sans } from "next/font/google";
 import "./globals.css";
 
-<link
-  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap"
-  rel="stylesheet"
-/>;
 
 // Load Google Fonts properly
 const playfair = Playfair_Display({

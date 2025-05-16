@@ -283,23 +283,15 @@ const Products: NextPage = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-amber-900 text-white py-20 mt-20"
+          className=" text-amber-800 py-10  mt-4"
         >
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-serif mb-6">
-              Can&apos;t Decide? Try Our Tasting Flight
+              Can&apos;t Decide?
+              <br /> Come To Our Cafe and Try Our Tasting Flight
             </h2>
-            <p className="text-xl text-amber-100 max-w-2xl mx-auto mb-8">
-              Experience a curated selection of our best sellers in one perfect
-              set
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-white text-amber-900 rounded-full font-bold tracking-wider shadow-lg hover:shadow-xl transition-all"
-            >
-              Explore Tasting Options
-            </motion.button>
+           
+          
           </div>
         </motion.div>
       </div>

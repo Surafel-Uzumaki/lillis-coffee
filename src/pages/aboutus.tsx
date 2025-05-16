@@ -96,10 +96,7 @@ interface ProcessStep {
 }
 
 const AboutUs: NextPage = () => {
-  const [heroRef, heroInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
+
   const [storyRef, storyInView] = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -118,7 +115,6 @@ const AboutUs: NextPage = () => {
   // });
 
   const { scrollYProgress } = useScroll();
-  const yPosHero = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
   const yPosValues = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
 
   const values: ValueCard[] = [
@@ -185,49 +181,7 @@ const AboutUs: NextPage = () => {
         />
       </Head>
 
-      {/* Modern Hero Section */}
-      <motion.section
-        ref={heroRef}
-        initial="hidden"
-        animate={heroInView ? "visible" : "hidden"}
-        variants={staggerContainer}
-        className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden "
-      >
-        <motion.div
-          className="absolute inset-0 z-0 bg-[url('/images/beans.jpg')] bg-cover bg-center"
-          style={{ y: yPosHero }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50 z-1 "></div>
-
-        <div className="relative z-10 text-center max-w-4xl py-32 sm:py-40 lg:py-48">
-          <motion.div variants={staggerContainer}>
-            <motion.h1
-              variants={textReveal}
-              className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-6 leading-tight"
-            >
-              Crafting Coffee <span className="italic">With</span> Purpose
-            </motion.h1>
-            <motion.p
-              variants={textReveal}
-              className="font-montserrat text-lg md:text-xl lg:text-2xl text-amber-100 max-w-2xl mx-auto mb-10"
-            >
-              Specialty coffee roasted with intention since 2012
-            </motion.p>
-            <motion.div variants={textReveal}>
-              <motion.button
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: "0 10px 25px -5px rgba(180, 83, 9, 0.4)",
-                }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-amber-700 hover:bg-amber-800 text-white px-8 py-4 rounded-full font-medium font-montserrat transition-all duration-300 shadow-lg"
-              >
-                Discover Our Process ↓
-              </motion.button>
-            </motion.div>
-          </motion.div>
-        </div>
-      </motion.section>
+  
 
       {/* Our Story Section */}
       <motion.section
