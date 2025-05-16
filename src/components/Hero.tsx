@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Navbar from "./Navbar";
+import Link from "next/link";
 
 export default function Hero() {
   useEffect(() => {
@@ -77,7 +78,7 @@ export default function Hero() {
 
           {/* Stylish buttons - right aligned */}
           <div className="flex justify-end gap-4">
-            <a
+            <Link
               href="/menu"
               className="relative px-8 py-3.5 bg-coffee-accent text-white font-medium rounded-sm group overflow-hidden transition-all duration-300 hover:bg-coffee-dark flex items-center"
             >
@@ -99,15 +100,15 @@ export default function Hero() {
                 </svg>
               </span>
               <span className="absolute inset-0 bg-gradient-to-l from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/about"
               className="relative px-8 py-3.5 border border-white/30 text-white font-medium rounded-sm group overflow-hidden transition-all duration-300 hover:border-white/60 hover:bg-white/5"
             >
               <span className="relative z-10">Our Story</span>
               <span className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-            </a>
+            </Link>
           </div>
 
           {/* Additional info - right aligned */}
