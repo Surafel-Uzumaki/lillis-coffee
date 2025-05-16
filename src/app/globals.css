@@ -26,3 +26,13 @@
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+@layer components {
+  .menu-item {
+    transition: all 0.3s ease;
+  }
+
+  .menu-item:hover {
+    transform: translateY(-5px);
+  }
+}

@@ -52,7 +52,7 @@ const Products: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Our Menu | Lillis Coffee Shop</title>
+        <title>Our Products | Lillis Coffee Shop</title>
         <meta
           name="description"
           content="Discover our premium coffee, tea, pastries and merchandise"
@@ -78,7 +78,7 @@ const Products: NextPage = () => {
             className="relative z-10 text-center px-4"
           >
             <h1 className="text-4xl md:text-6xl font-bold text-amber-900 mb-4 font-serif tracking-tight">
-              Our Menu
+              Our Products
             </h1>
             <p className="text-xl text-amber-900 underline max-w-2xl mx-auto font-light">
               Handcrafted with care, served with love

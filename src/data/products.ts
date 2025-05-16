@@ -2,6 +2,7 @@ export const products = [
   {
     id: 1,
     name: "Ethiopian Yirgacheffe",
+    nameAmharic: "የኢትዮጵያ ይርጋቸፍ",
     description: "Single origin with floral notes and bright citrus acidity",
     price: "$4.50",
     category: "coffee",
@@ -11,6 +12,7 @@ export const products = [
   {
     id: 2,
     name: "Colombian Supremo",
+    nameAmharic: "ኮሎምቢያ ሱፕሪሞ",
     description: "Medium roast with caramel sweetness and nutty finish",
     price: "$4.00",
     category: "coffee",
@@ -19,6 +21,7 @@ export const products = [
   {
     id: 3,
     name: "Earl Grey Supreme",
+    nameAmharic: "አርል ግሬ ሱፕሪም",
     description: "Bergamot-infused black tea with floral undertones",
     price: "$3.50",
     category: "tea",
@@ -27,6 +30,7 @@ export const products = [
   {
     id: 4,
     name: "Matcha Latte",
+    nameAmharic: "ማቻ ላቴ",
     description: "Premium ceremonial grade matcha with steamed milk",
     price: "$5.00",
     category: "tea",
@@ -36,6 +40,7 @@ export const products = [
   {
     id: 5,
     name: "Almond Croissant",
+    nameAmharic: "የአልሞንድ ክሮሰን",
     description: "Flaky pastry with almond cream filling",
     price: "$3.75",
     category: "pastry",
@@ -44,9 +49,97 @@ export const products = [
   {
     id: 6,
     name: "Lillis Coffee Mug",
+    nameAmharic: "የሊሊስ ቡና መንታ",
     description: "Ceramic mug with our signature logo",
     price: "$12.00",
     category: "merchandise",
     image: "/images/products/beans11.jpg",
+  },
+];
+
+export const drinks = [
+  {
+    id: 1,
+    name: "Espresso",
+    nameAmharic: "ኤስፕሬሶ",
+    description: "Rich and creamy espresso shot",
+    price: 3.5,
+    image: "/drinks/espresso.jpg",
+    categories: ["Hot", "Classic"],
+  },
+  {
+    id: 2,
+    name: "Cappuccino",
+    nameAmharic: "ካፑቺኖ",
+    description: "Espresso with steamed milk and foam",
+    price: 4.25,
+    image: "/drinks/cappuccino.jpg",
+    categories: ["Hot", "Milk"],
+  },
+  {
+    id: 3,
+    name: "Iced Latte",
+    nameAmharic: "የበረዶ ላቴ",
+    description: "Espresso with cold milk over ice",
+    price: 4.5,
+    image: "/drinks/icedlatte.jpg",
+    categories: ["Cold", "Milk"],
+  },
+  {
+    id: 4,
+    name: "Macchiato",
+    nameAmharic: "ማኪያቶ",
+    description: "Smooth, slow-steeped cold coffee",
+    price: 4.0,
+    image: "/drinks/lilis.jpg",
+    categories: ["Cold", "Strong"],
+  },
+];
+
+export const foods = [
+  {
+    id: 101,
+    name: "Avocado Toast",
+    nameAmharic: "አቮካዶ ቁርስ እንቁላል",
+    description: "Sourdough with avocado, cherry tomatoes, and feta",
+    price: 8.5,
+    image: "/foods/avocadotoast.jpg",
+    categories: ["Breakfast", "Vegetarian"],
+  },
+  {
+    id: 102,
+    name: "Breakfast Bagel",
+    nameAmharic: "የቁርስ ባጌል",
+    description: "Toasted bagel with cream cheese and smoked salmon",
+    price: 9.75,
+    image: "/foods/bagel.jpg",
+    categories: ["Breakfast", "Popular"],
+  },
+  {
+    id: 103,
+    name: "Full",
+    nameAmharic: "ፉል",
+    description: "Freshly baked with juicy blueberries",
+    price: 3.95,
+    image: "/foods/full.jpg",
+    categories: ["Pastry", "Sweet"],
+  },
+  {
+    id: 104,
+    name: "Egg Sandwhich",
+    nameAmharic: "እንቁላል ሳንድዊች",
+    description: "Buttery croissant with ham and Swiss cheese",
+    price: 5.5,
+    image: "/foods/eggsand.jpg",
+    categories: ["Breakfast", "Savory"],
+  },
+  {
+    id: 105,
+    name: "French Fries",
+    nameAmharic: "ቺፕስ",
+    description: "Classic French quiche with bacon and cheese",
+    price: 7.25,
+    image: "/foods/fries.jpg",
+    categories: ["Lunch", "Vegetarian"],
   },
 ];
